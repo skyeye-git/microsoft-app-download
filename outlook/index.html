@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to Microsoft Outlook...</title>
+  <script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      window.location.replace("https://google.com");
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.location.replace("https://apple.com");
+    } else {
+      window.location.replace("https://microsoft.com");
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting you to Microsoft Outlook...</p>
+</body>
+</html>
