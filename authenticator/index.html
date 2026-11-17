@@ -7,11 +7,11 @@
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
-      window.location.replace("https://google.com");
+      window.location.replace("https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=de");
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.location.replace("https://apple.com");
+      window.location.replace("https://apps.apple.com/ca/app/microsoft-authenticator/id983156458");
     } else {
-      window.location.replace("https://microsoft.com");
+      window.location.replace("https://support.microsoft.com/en-us/authenticator/download-microsoft-authenticator");
     }
   </script>
 </head>
